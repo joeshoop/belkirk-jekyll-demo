@@ -1,21 +1,26 @@
 ---
 label: project
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: title
   label: Title
-- name: sub_heading
-  label: Sub Heading
-  type: text
-  hidden: false
-  default: ''
-- name: banner_image
-  label: Banner Image
+  config:
+    required: true
+  default: Eye Logo
+- name: image
+  label: Image
   type: file
-  description: Dimensions work best at 1200 pixels by 400 pixels
+  description: 1440 by 1440px
   hidden: false
-  default: ''
+  default: "/uploads/Eye-1.png"
+- type: color
+  name: background_color
+  config:
+    color_format: Hex
+    required: true
+  label: Background Color
+  default: "#F5A623"
 - name: tags
   label: Tags
   type: tag_list
@@ -26,5 +31,12 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: datetime
+  config:
+    required: true
+    date_format: YYYY
+  hidden: false
+  label: Year
+  name: year
 pages:
 - Test Project/icon-for-target-s-first-ipad-app.md
