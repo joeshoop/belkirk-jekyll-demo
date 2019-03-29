@@ -5,10 +5,8 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: jekyll-pages
-  label: Projects
+  label: Pages
   create: all
-  templates:
-  - project
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
