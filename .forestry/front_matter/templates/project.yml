@@ -38,3 +38,4 @@ fields:
   hidden: false
   label: Year
   name: year
+  default: 2019-03-01 08:00:00 +0000
